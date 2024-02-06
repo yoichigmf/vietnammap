@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "cambodia_p",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "name": "PhnomPenh" }, "geometry": { "type": "Point", "coordinates": [ 104.915649415995475, 11.575248626525843 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "name": "Siem Reap" }, "geometry": { "type": "Point", "coordinates": [ 103.832155302704294, 13.389058822821077 ] } }
+]
+}
