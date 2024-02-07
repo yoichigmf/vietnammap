@@ -87,7 +87,7 @@
   <input id="inc" type="button" value="+" onclick="filterAdd()" />
   <br>
 
-  <input id="slider" type="range" min="0" max="616" step="1" value="0" />
+  <input id="slider" type="range" min="0" max="753" step="1" value="0" />
   <!--
 <select id="year" name="year"></select>
 <select id="month" name="month"></select>
@@ -162,9 +162,9 @@ function filterDec() {
 
 function filterBy(dated) {
 
-    let startdate = new Date(2021, 6-1, 1);
-    let cmpdateL= new Date(2021, 6-1, 1);
-    let cmpdateH= new Date(2021, 6-1, 1);
+    let startdate = new Date(2021, 10-1, 6);
+    let cmpdateL= new Date(2021, 10-1, 6);
+    let cmpdateH= new Date(2021, 10-1, 6);
    
     //tg = new Date( startdate + dated);
 
@@ -380,11 +380,11 @@ var symurl = "https://raw.githubusercontent.com/yoichigmf/lhazardmap/develop/ico
        // img = await loadImageAsPromise(map, sym['icon']);
 
         // Add a source for the state polygons.
-        map.addSource('sew', {
-            'type': 'geojson',
-            'data': 'data/bandung_sew.geojson'
+       // map.addSource('sew', {
+        //    'type': 'geojson',
+        //    'data': 'data/bandung_sew.geojson'
          //   'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_1_states_provinces_shp.geojson'
-        });
+        //});
 
 
         
@@ -473,7 +473,7 @@ var symurl = "https://raw.githubusercontent.com/yoichigmf/lhazardmap/develop/ico
         // Add a source for the state polygons.
         map.addSource('timeline', {
             'type': 'geojson',
-            'data': 'data/timeline.geojson'
+            'data': 'data/vtimeline.geojson'
          
         });
 
@@ -499,7 +499,7 @@ var symurl = "https://raw.githubusercontent.com/yoichigmf/lhazardmap/develop/ico
                         'circle-opacity': 0.75,
                         'circle-radius': [
                     'step',
-                    ['get', 'radius'],
+                    ['get', 'rad'],
                     10,
                     1,
                     20,
